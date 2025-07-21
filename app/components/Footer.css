@@ -1,0 +1,27 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-text {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.social-links a svg {
+  width: 28px;
+  height: 28px;
+}
