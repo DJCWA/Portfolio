@@ -1,0 +1,131 @@
+.poker-details-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #333;
+}
+
+.poker-details-container h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.poker-details-container h2 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 0.75rem;
+}
+
+.project-detail-section {
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.project-detail-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-section ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-section ul li {
+  margin-bottom: 0.75rem;
+}
+
+.poker-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.poker-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.poker-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.poker-image-tooltip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 1.2rem;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.poker-image-wrapper:hover .poker-image-tooltip {
+  opacity: 1;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-button:hover {
+  color: #0056b3;
+}
+
+.work-item-button {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 1rem 2.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.work-item-button:hover {
+  background-color: #0056b3;
+}
