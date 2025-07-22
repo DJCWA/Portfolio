@@ -61,7 +61,7 @@ export default function PokerDetails() {
         />
       </div>
       <div style={{ textAlign: 'center', marginTop: '30px' }}>
-        <a href="https://www.dropbox.com/scl/fi/c730ff1oy2uosio4gc9pq/PokerGame.zip?rlkey=ndhonsyqxy7jrpx700e8juuxz&st=k2fw3bqx&dl=1" className="work-item-button" style={{ display: 'inline-block', padding: '10px 20px', backgroundColor: '#007bff', color: 'white', textDecoration: 'none', borderRadius: '5px' }}>Download Game</a>
+        <a href={process.env.NEXT_PUBLIC_POKER_GAME_DOWNLOAD_LINK} className="work-item-button" style={{ display: 'inline-block', padding: '10px 20px', backgroundColor: '#007bff', color: 'white', textDecoration: 'none', borderRadius: '5px' }}>Download Game</a>
       </div>
     </div>
   );
