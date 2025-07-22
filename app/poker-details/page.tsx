@@ -61,7 +61,7 @@ export default function PokerDetails() {
         />
       </div>
       <div style={{ textAlign: 'center', marginTop: '30px' }}>
-        <a href="/PokerGame.zip" download className="work-item-button" style={{ display: 'inline-block', padding: '10px 20px', backgroundColor: '#007bff', color: 'white', textDecoration: 'none', borderRadius: '5px' }}>Download Game</a>
+        <a href="https://drive.google.com/uc?export=download&id=1ZlstEnecM02_5X-yFcb7hiS-IBLS6KP1" className="work-item-button" style={{ display: 'inline-block', padding: '10px 20px', backgroundColor: '#007bff', color: 'white', textDecoration: 'none', borderRadius: '5px' }}>Download Game</a>
       </div>
     </div>
   );
