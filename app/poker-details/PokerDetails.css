@@ -2,7 +2,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  color: #fff;
+  color: #fff !important;
 }
 
 .poker-details-container h1 {
@@ -10,7 +10,7 @@
   margin-bottom: 3rem;
   font-size: 3rem;
   font-weight: bold;
-  color: #fff;
+  color: #fff !important;
 }
 
 .poker-details-container h2 {
@@ -19,7 +19,7 @@
   margin-bottom: 2rem;
   font-size: 2.2rem;
   font-weight: bold;
-  color: #fff;
+  color: #fff !important;
   border-bottom: 3px solid #007bff;
   padding-bottom: 0.75rem;
 }
@@ -36,7 +36,7 @@
 .project-detail-section h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: #fff !important;
   border-bottom: 3px solid #007bff;
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
@@ -46,7 +46,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #fff !important;
 }
 
 .project-detail-section ul {
@@ -55,11 +55,18 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #fff !important;
 }
 
 .project-detail-section ul li {
   margin-bottom: 0.75rem;
+  color: #fff !important;
+}
+
+/* Added rule for direct children of poker-details-container */
+.poker-details-container p,
+.poker-details-container li {
+  color: #fff !important;
 }
 
 .poker-images {
@@ -104,8 +111,8 @@
 
 .back-button {
   display: inline-block;
-  margin-bottom: 2.5rem;
-  color: #fff;
+  margin-bottom: 0.75rem;
+  color: #fff !important;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
