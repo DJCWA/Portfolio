@@ -2,7 +2,7 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  color: #333;
+  color: #fff;
 }
 
 .hospital-database-details-container h1 {
@@ -10,21 +10,22 @@
   margin-bottom: 3rem;
   font-size: 3rem;
   font-weight: bold;
-  color: #333;
+  color: #fff;
 }
 
 .project-detail-section {
   margin-bottom: 3rem;
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
 }
 
 .project-detail-section h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #007bff;
+  color: #fff;
   border-bottom: 3px solid #007bff;
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
@@ -34,13 +35,14 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #555;
+  color: #fff;
 }
 
 .project-detail-section p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .project-detail-section ul {
@@ -48,6 +50,7 @@
   margin-left: 25px;
   font-size: 1.1rem;
   line-height: 1.8;
+  color: #fff;
 }
 
 .project-detail-section ul li {

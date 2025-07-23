@@ -13,21 +13,23 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .resume-header p {
   font-size: 1.1rem;
-  color: #666;
+  color: #fff;
 }
 
 .resume-section {
   margin-bottom: 3rem;
+  color: #fff;
 }
 
 .resume-section h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #333;
+  color: #fff;
   border-bottom: 3px solid #007bff;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
@@ -40,12 +42,13 @@
 }
 
 .education-item, .project-item, .work-item {
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0;
 }
 
 .project-item-link {

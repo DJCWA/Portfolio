@@ -1,14 +1,14 @@
 .skills-container {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: transparent;
 }
 
 .skills-title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  color: #333;
+  color: #fff;
 }
 
 .skills-grid {
@@ -19,10 +19,10 @@
 }
 
 .skill-category {
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 2rem;
   border-radius: 12px;
-  color: #333;
+  color: #fff;
   border: 1px solid #e0e0e0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

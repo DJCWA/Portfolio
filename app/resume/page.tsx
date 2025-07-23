@@ -11,7 +11,7 @@ export default function Resume() {
     <div className="resume-container">
       <header className="resume-header">
         <h1>Daniel Allen</h1>
-        <p>Oshawa, Ontario | (647) 960-0155 | Daniel082198@gmail.com</p>
+        <p>Oshawa, Ontario | (647) 960-0155 | danieljcwallen@gmail.com</p>
       </header>
 
       <section className="resume-section">
