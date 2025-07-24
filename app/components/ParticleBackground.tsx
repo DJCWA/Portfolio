@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useCallback } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { type Container, type ISourceOptions } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
@@ -16,9 +16,26 @@ export default function ParticleBackground() {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log('Particles container loaded', container);
-  };
+  const particlesLoaded = useCallback(async (container?: Container): Promise<void> => {
+    if (!container) {
+      return;
+    }
+    let clickCount = 0;
+    const maxClicks = 25;
+
+    const handleClick = () => {
+      clickCount++;
+      if (clickCount >= maxClicks) {
+        if (container.options.interactivity.events.onClick) {
+          container.options.interactivity.events.onClick.enable = false;
+        }
+        container.refresh();
+        container.canvas.element?.removeEventListener('click', handleClick);
+      }
+    };
+
+    container.canvas.element?.addEventListener('click', handleClick);
+  }, []);
 
   const options: ISourceOptions = useMemo(
     () => ({

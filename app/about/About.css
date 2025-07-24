@@ -46,3 +46,17 @@
   color: #fff;
   margin-bottom: 1.5rem;
 }
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-name {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+}

@@ -139,3 +139,24 @@
 .work-item-button:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .poker-details-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .project-detail-section {
+    padding: 1.5rem;
+  }
+
+  .project-detail-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .poker-image-tooltip {
+    opacity: 1;
+    position: static;
+    background-color: transparent;
+    padding: 1rem 0 0 0;
+  }
+}

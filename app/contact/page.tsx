@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 export default function Contact() {
   const [status, setStatus] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -25,7 +26,7 @@ export default function Contact() {
       });
 
       if (response.ok) {
-        setStatus('Message sent successfully!');
+        setIsSubmitted(true);
       } else {
         setStatus('Error sending message.');
       }
@@ -37,23 +38,32 @@ export default function Contact() {
 
   return (
     <div className="contact-container">
-      <h1 className="contact-title">Get in Touch</h1>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" required />
+      {isSubmitted ? (
+        <div className="thank-you-message">
+          <h2>Thank you for contacting me!</h2>
+          <p>I'll be in touch shortly.</p>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" rows={6} required></textarea>
-        </div>
-        <button type="submit" className="submit-btn">Send Message</button>
-      </form>
-      {status && <p className="status-message">{status}</p>}
+      ) : (
+        <>
+          <h1 className="contact-title">Get in Touch</h1>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea id="message" name="message" rows={6} required></textarea>
+            </div>
+            <button type="submit" className="submit-btn">Send Message</button>
+          </form>
+          {status && <p className="status-message">{status}</p>}
+        </>
+      )}
     </div>
   );
 }

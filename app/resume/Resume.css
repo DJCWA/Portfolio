@@ -93,3 +93,21 @@
 .download-button:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .resume-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .education-item, .project-item, .work-item {
+    padding: 1.5rem;
+  }
+
+  .skills-grid-resume {
+    grid-template-columns: 1fr;
+  }
+}

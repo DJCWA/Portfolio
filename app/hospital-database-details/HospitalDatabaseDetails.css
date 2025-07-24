@@ -81,3 +81,17 @@
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+  .hospital-database-details-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .project-detail-section {
+    padding: 1.5rem;
+  }
+
+  .project-detail-section h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -25,3 +25,10 @@
   width: 28px;
   height: 28px;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+}

@@ -16,7 +16,9 @@ export async function POST(req: NextRequest) {
     from: email,
     to: 'danieljcwallen@gmail.com',
     subject: `New message from ${name}`,
-    text: message,
+    text: `From: ${email}
+
+${message}`,
   };
 
   try {
