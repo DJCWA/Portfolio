@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ImageWithTooltip from './components/ImageWithTooltip';
+import '../Portfolio.css';
 
 export default function PokerDetails() {
   return (
@@ -60,8 +61,9 @@ export default function PokerDetails() {
           description="This is the Texas Hold Em' variation with 3 players selected with a randomized starting hand." 
         />
       </div>
-      <div style={{ textAlign: 'center', marginTop: '30px' }}>
-        <a href={process.env.NEXT_PUBLIC_POKER_GAME_DOWNLOAD_LINK} className="work-item-button" style={{ display: 'inline-block', padding: '10px 20px', backgroundColor: '#007bff', color: 'white', textDecoration: 'none', borderRadius: '5px' }}>Download Game</a>
+      <p style={{ textAlign: 'center', color: 'white', marginBottom: '15px' }}>To run the game: Extract the downloaded ZIP file, then run the .exe file inside the extracted folder.</p>
+      <div style={{ textAlign: 'center' }}>
+        <a href={process.env.NEXT_PUBLIC_POKER_GAME_DOWNLOAD_LINK} className="hero-cta">Download Game</a>
       </div>
     </div>
   );
