@@ -30,12 +30,12 @@ export default function Home() {
               </p>
             </div>
           </Link>
-          <Link href="/project3-details" passHref className="work-item">
+          <Link href="/future-projects" passHref className="work-item">
             <div className="work-item-image" style={{ backgroundColor: '#e0e0e0' }}></div>
             <div className="work-item-content">
-              <h3 className="work-item-title">Project 3</h3>
+              <h3 className="work-item-title">Future Projects</h3>
               <p className="work-item-description">
-                A brief description of the project goes here.
+                Future projects will be posted here.
               </p>
             </div>
           </Link>
