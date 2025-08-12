@@ -1,5 +1,6 @@
 import './About.css';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "About Me",
@@ -10,7 +11,9 @@ export default function About() {
     <div className="about-container">
       <h1 className="about-title">About Me</h1>
       <div className="about-content">
-        <div className="about-image"></div>
+        <div className="about-image">
+          <Image src="/profile.jfif" alt="Daniel Allen" width={200} height={200} />
+        </div>
         <div className="about-text">
           <h2 className="about-name">Daniel Allen</h2>
           <p>
