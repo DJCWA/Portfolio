@@ -7,6 +7,15 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: top 0.3s;
+}
+
+.header-hidden {
+  top: -100px;
+}
+
+.header-visible {
+  top: 0;
 }
 
 .logo {

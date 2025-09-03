@@ -1,8 +1,0 @@
-Feat: Update Poker Details page and add .env.local
-
-Refactor: Make download button consistent with main page CTA.
-
-- Applied 'hero-cta' class to download button.
-- Removed custom 'download-game-button' styling.
-- Centered the download button.
-- Added .env.local for Dropbox download link.
