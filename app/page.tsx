@@ -6,7 +6,7 @@ export default function Home() {
     <div className="portfolio-container">
       <header className="hero-section">
         <h1 className="hero-title">Daniel Allen</h1>
-        <p className="hero-subtitle">Aspiring Cloud Practitioner & Web Developer</p>
+        <p className="hero-subtitle">Aspiring Cloud Practitioner & Software Developer</p>
         <Link href="/contact" className="hero-cta">Get in Touch</Link>
       </header>
 

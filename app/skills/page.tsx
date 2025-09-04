@@ -23,6 +23,8 @@ export default function Skills() {
           <ul>
             <li>Load Balancers</li>
             <li>Virtual Networks</li>
+            <li>Subnets</li>
+            <li>NAT Gateways</li>
           </ul>
         </div>
         <div className="skill-category">
@@ -30,12 +32,15 @@ export default function Skills() {
           <ul>
             <li>Virtual Machines</li>
             <li>Compute Instances</li>
+            <li>Auto Scaling</li>
           </ul>
         </div>
         <div className="skill-category">
           <h2>Security</h2>
           <ul>
             <li>Emphasis on security best practices across all platforms and services.</li>
+            <li>Security Groups</li>
+            <li>IAM Roles</li>
           </ul>
         </div>
         <div className="skill-category">
@@ -54,6 +59,7 @@ export default function Skills() {
           <h2>Database Management</h2>
           <ul>
             <li>Implementing, creating, viewing, securing, and managing data.</li>
+            <li>SQL/MySQL</li>
           </ul>
         </div>
       </div>
