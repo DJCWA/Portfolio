@@ -12,7 +12,7 @@ export default function About() {
       <h1 className="about-title">About Me</h1>
       <div className="about-content">
         <div className="about-image">
-          <Image src="/profile.jfif" alt="Daniel Allen" width={200} height={200} />
+          <Image src="/profile.jpg" alt="Daniel Allen" width={200} height={200} />
         </div>
         <div className="about-text">
           <h2 className="about-name">Daniel Allen</h2>
