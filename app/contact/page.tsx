@@ -31,7 +31,6 @@ export default function Contact() {
         setStatus('Error sending message.');
       }
     } catch (error) {
-      console.error(error);
       setStatus('Error sending message.');
     }
   };

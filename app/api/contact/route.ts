@@ -25,7 +25,6 @@ ${message}`,
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ message: 'Message sent successfully' });
   } catch (error) {
-    console.error(error);
     return NextResponse.json({ message: 'Error sending message' }, { status: 500 });
   }
 }
